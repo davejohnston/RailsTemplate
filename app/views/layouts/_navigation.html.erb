@@ -1,0 +1,18 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="logo-element">
+                    OWM SDM+
+                </div>
+            </li>
+            <li class="<%= is_active_controller('sur') %>">
+                <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label" data-i18n="nav.graphs">Story Board</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse <%= is_active_controller('welcome') %>">
+                  <li class="<%= is_active_action('data_provisioning') %>"><%= link_to "Data Provisioning and Replication", root_path, id: "welcome" %></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</nav>
